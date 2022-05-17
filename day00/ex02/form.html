@@ -7,32 +7,32 @@
 	 	<title>Email sending form</title>
 	 	<script src="popup.js"></script>
 	</head>
-	<body>
+	<body style=" background-color:#E5E4E2">
 		<form onsubmit="return false;">
-			<div>
+			<div style="margin-left:5px; border:1px solid #ccc; width:300px; padding:15px; border-radius:5px;">
 				<label for="firstname">Firstname: </label>
 				<input id="firstname" required/>
 			</div>
-			<div>
+			<div style="margin-left:5px; border:1px solid #ccc; width:300px; padding:15px; border-radius:5px;">
 				<label for="name">Name: </label><input id="name" required/>
 			</div>
-			<div>
+			<div style="margin-left:5px; border:1px solid #ccc; width:300px; padding:15px; border-radius:5px;">
 				<label for="age">Age: </label>
 				<input id="age" type="number" required/>
 			</div>
-			<div>
+			<div style="margin-left:5px; border:1px solid #ccc; width:300px; padding:15px; border-radius:5px;">
 				<label for="phone">Phone: </label>
 				<input id="phone" type="tel" required/>
 			</div>
-			<div>
+			<div style="margin-left:5px; border:1px solid #ccc; width:300px; padding:15px; border-radius:5px;">
 				<label for="email">Email: </label>
 				<input id="email" type="email" required/>
 			</div>
-			<div>
+			<div style="margin-left:5px; border:1px solid #ccc; width:300px; padding:15px; border-radius:5px;">
 				<label for="student">Student at 42 </label>
 				<input id="student" type="checkbox" />
 			</div>
-			<div>
+			<div style="margin-left:5px; border:1px solid #ccc; width:300px; padding:15px; border-radius:5px;">
 				<label for="gender_male">Male</label>
 				<input
 					id="gender_male"
@@ -46,7 +46,8 @@
 				<label for="gender_other">Other</label>
 				<input id="gender_other" name="gender" value="Other" type="radio" />
 			</div>
-			<button type="submit" class="btn btn-primary">Submit </button>
+			<button style="margin-left:5px; border:1px solid #ccc; width:330px; padding:15px; border-radius:5px;" type="submit" onclick="displayFormContents()">
+				SUBMIT!
 			</button>
 		</form>
 	</body>

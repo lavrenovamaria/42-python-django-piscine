@@ -1,6 +1,3 @@
 #!/bin/sh
 
-curl -slI $1 | grep -i Location | cut -d ':' -d ' ' -f 2-
-
-
-
+curl -slI $1 | grep -E "Location:|location:" | cut -d ':' -d ' ' -f 2-
