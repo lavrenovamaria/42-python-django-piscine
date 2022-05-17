@@ -1,3 +1,5 @@
+import sys
+
 def capitals():
 	states = {
 	"Oregon" : "OR",
@@ -12,7 +14,7 @@ def capitals():
 	"CO": "Denver"
 	}
 def guess_capital():
-	
+	for word in sys.argv[1]
 
 if __name__ == "__main__":
 	guess_capital()
