@@ -13,15 +13,15 @@ def guess_capital(capital):
 	"NJ": "Trenton",
 	"CO": "Denver"
 	}
-	#if state in states:
-	#	print(capital_cities[states[state]])
-	if capital in capital_cities.values():
-		print(states[capital_cities[capital]])
+
+	for state in states:
+		if capital_cities[states[state]] == capital:
+			return state
 	else:
-		print("Unknown state")
+		sys.exit('Unknown capital city')
 
 if __name__ == "__main__":
 	if len(sys.argv) != 2:
 		exit
 	else:
-		guess_capital(sys.argv[1])
+		print(guess_capital(sys.argv[1]))
