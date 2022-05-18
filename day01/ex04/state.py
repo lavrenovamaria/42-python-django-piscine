@@ -1,6 +1,6 @@
 import sys
 
-def guess_capital(state):
+def guess_capital(capital):
 	states = {
 	"Oregon" : "OR",
 	"Alabama" : "AL",
@@ -13,8 +13,10 @@ def guess_capital(state):
 	"NJ": "Trenton",
 	"CO": "Denver"
 	}
-	if state in states:
-		print(capital_cities[states[state]])
+	#if state in states:
+	#	print(capital_cities[states[state]])
+	if capital in capital_cities.values():
+		print(states[capital_cities[capital]])
 	else:
 		print("Unknown state")
 
