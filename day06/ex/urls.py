@@ -1,11 +1,22 @@
-from . import views
 from django.urls import path
 
+from .views import home
+from .views import logins
+from .views import registration
+from .views import logout_me
+from .views import like_tip
+from .views import dislike_tip
+from .views import delete
+from .views import upgrate
+
+
 urlpatterns = [
-    path('', views.Index.as_view(), name='index'),
-    path('register/', views.Register.as_view(), name='register'),
-    path('profile/', views.Profile.as_view(), name='profile'),
-    path('login/', views.Login.as_view(), name='login'),
-    path('logout/', views.Logout.as_view(), name='logout'),
-    path('tip/', views.Tip.as_view(), name='tip'),
+    path('', home),
+    path('login/', logins),
+    path('registration/', registration),
+    path('logout/', logout_me),
+    path('like/', like_tip),
+    path('dislike/', dislike_tip),
+    path('delete/', delete),
+    path('upgrate/', upgrate),
 ]
